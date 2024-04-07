@@ -15,7 +15,7 @@
 
 <body>
 
-    <header>
+    <header class="header-desktop">
 
         <div class="menu">
             <svg aria-hidden="true" class="w-8 h-8 icon-menu" fill="currentColor" viewBox="0 0 20 20"
@@ -33,19 +33,53 @@
 
         <div class="icons">
 
-            <img src="assets/images/icon-search.svg" alt="">
+            <div>
+                <img src="assets/images/icon-search.svg" alt="">
+            </div>
 
             <div class="icon-bandeira">
                 <img src="assets/images/icon-bandeira.svg" onclick="toggleControle()" alt="">
             </div>
 
-            <img src="assets/images/icon-light.png" alt="" style="width: 25px; height: 25px;">
+            <div>
+                <img src="assets/images/icon-light.png" alt="" style="width: 25px; height: 25px;">
+            </div>
 
         </div>
 
     </header>
 
-    <div class="links">
+    <header class="header-mobile">
+
+        <div class="logo">
+            <img src="assets/images/site-logo.svg" alt="">
+        </div>
+
+        <div class="icons">
+
+            <div>
+                <img src="assets/images/icon-search.svg" alt="">
+            </div>
+
+            <div class="icon-bandeira">
+                <img src="assets/images/icon-bandeira.svg" onclick="toggleControle()" alt="">
+            </div>
+
+        </div>
+
+        <div class="menu">
+            <svg aria-hidden="true" class="w-8 h-8 icon-menu" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd"></path>
+            </svg>
+            <span>MENU</span>
+        </div>
+
+    </header>
+
+    <div class="links links-desktop">
 
         <div class="router-link" style="border-bottom: 3px solid #ff5a1f; color: #ff5a1f;">
             <p>Sorteio de Numeros</p>
@@ -73,6 +107,22 @@
 
     </div>
 
+    <div class="links links-mobile">
+
+        <div class="router-link" style="border-bottom: 3px solid #ff5a1f; color: #ff5a1f;">
+            <p>Numeros</p>
+        </div>
+
+        <div class="router-link" style="border-bottom: 3px solid #c27803; color: #c27803">
+            <p>Apostas</p>
+        </div>
+
+        <div class="router-link" style="border-bottom: 3px solid #0e9f6e; color: #0e9f6e">
+            <p>Loterias</p>
+        </div>
+
+    </div>
+
     <section>
 
         <div class="announcement anuncio-1">
@@ -93,8 +143,7 @@
                 <img src="assets/images/site-logo.svg" alt="">
             </div>
 
-            <div
-                style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 10px; width: 60%;">
+            <div class="form">
 
                 <span>Sortear</span>
 

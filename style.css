@@ -18,6 +18,10 @@ header {
     width: 100%;
 }
 
+.header-mobile {
+    display: none;
+}
+
 .menu {
     display: flex;
     align-items: center;
@@ -38,8 +42,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 110px;
+}
 
+.icons div {
+    margin-left: 10px;
 }
 
 .icons img {
@@ -62,6 +68,10 @@ header {
 
 .links {
     display: flex;
+}
+
+.links-mobile {
+    display: none;
 }
 
 .router-link {
@@ -129,6 +139,15 @@ section .banner {
     align-items: center;
     color: #6b7280;
     padding-bottom: 80px;
+}
+
+.form {
+    display: flex; 
+    flex-wrap: wrap; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 10px; 
+    width: 60%;
 }
 
 section .banner img {
@@ -252,4 +271,52 @@ section .banner span {
     margin-top: 8px;
     font-size: 9px;
     color: #1f2937;
+}
+
+@media screen and (max-width: 380px) {
+
+    .header-mobile {
+        display: flex;
+    }
+
+    .header-desktop {
+        display: none;
+    }
+
+    .links-desktop {
+        display: none;
+    }
+
+    .links-mobile {
+        display: flex;
+    }
+
+    .router-link {
+        width: 33.33%;
+    }
+
+    section {
+        padding: 20px 10px;
+    }
+
+    section .announcement {
+        display: none;
+    }
+
+    section .form {
+        width: 80%;
+    }
+
+    section .banner {
+        margin: auto;
+        width: 100%;
+    }
+
+    .button-sort {
+        width: 100%;
+    }
+
+    .notice {
+        width: 100%;
+    }
 }
