@@ -273,7 +273,7 @@ section .banner span {
     color: #1f2937;
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 450px) {
 
     .header-mobile {
         display: flex;
@@ -302,7 +302,7 @@ section .banner span {
     section .announcement {
         display: none;
     }
-
+    
     section .form {
         width: 80%;
     }
