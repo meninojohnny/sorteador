@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+header {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #6b7280;
+}
+
+.menu .icon-menu {
+    height: 23px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 110px;
+
+}
+
+.icons img {
+    width: 19.1px;
+    height: 19.1px;
+}
+
+.icon-bandeira {
+    width: 33px;
+    height: 33px;
+    background: #d1d5db;
+    border-radius: 50%;
+    padding: 4px;
+}
+
+.icon-bandeira img {
+    width: 25px;
+    height: 25px;
+}
+
+.links {
+    display: flex;
+}
+
+.router-link {
+    width: 16.6%;
+    text-align: center;
+    font-size: 14px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+section {
+    background-image: url("assets/images/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+section .announcement {
+    width: 150px;
+    background-color: white;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: end;
+    padding: 1px;
+    cursor: pointer;
+    height: 550px;
+}
+
+section .announcement .icon-anuncio {
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-left: .5px;
+}
+
+section .announcement i {
+    display: inline;
+    color: black;
+    font-size: 13px;
+}
+
+section .anuncio-1 {
+    background-image: url("assets/images/anuncio1.jpeg");
+    background-size: cover;
+
+}
+
+section .anuncio-2 {
+    background-image: url("assets/images/anuncio2.png");
+    background-size: cover;
+
+}
+
+section .banner {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    align-items: center;
+    color: #6b7280;
+    padding-bottom: 80px;
+}
+
+section .banner img {
+    width: 190px;
+    margin-bottom: 30px;
+}
+
+section .banner input {
+    width: 70px; 
+    height: 42px; 
+    padding: 6px;
+    background-color: #f9fafb; 
+    border: 1px solid rgba(128, 128, 128, 0.3);
+    border-radius: 6px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ff5a1f;
+    outline-color: rgb(63 131 248);
+}
+
+section .banner input:hover {
+    border: 1.5px solid #ff5a1f;
+}
+
+section .banner span {
+    font-size: 27px;
+}
+
+.numbers-sorted {
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.number-sorted {
+    width: 60px;
+    height: 60px;
+    border: 1.5px solid #ff5a1f;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 400;
+    color: #ff5a1f;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.number-sorted:hover {
+    background-color: #ff5a1f;
+    color: white;
+    width: 70px;
+    height: 70px;
+    font-size: 25px;
+}
+
+.button-sort {
+    width: 300px;
+    padding: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #ff5a1f;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 13px;
+    transition: .5s;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.button-sort:hover {
+    background-color: #be461a;
+    transform: translate(0px, -5px);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.clear-result {
+    padding: 11px 35px;
+}
+
+.button-back {
+    padding: 11px 20px;
+}
+
+.clear-result, .button-back {
+    background-color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 11px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+
+}
+
+.clear-result:hover, .button-back:hover {
+    background-color: rgb(241, 239, 239);
+}
+
+.notice {
+    width: 290px;
+    padding: 10px;
+    font-size: 10px;
+    color: black;
+    background-color: #fdf6b2;
+    border: none;
+    border-radius: 10px;
+    margin-top: 33px;
+    text-align: center;
+}
+
+.notice strong {
+    font-weight: bolder;
+}
+
+.notice p {
+    margin-top: 8px;
+    font-size: 9px;
+    color: #1f2937;
+}
